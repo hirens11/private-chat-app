@@ -1,0 +1,75 @@
+<div class="wrapper chat_page">
+	<div class="holder">
+    	<div class="action_bar">
+        	<span class="ion-navicon" ui-sref="vitals"></span>
+            <h1>Priya Karkera's Chat Room <br/> <small>Anant, Amruta, Dr Hemant</small></h1>
+        </div><!--action_bar-->
+        <div class="panel">
+        	<div class="panel-body">
+    	            <div class="daytag_holder">
+	    	           <div class="daytag">WED, 19 APR</div>
+	                </div>	
+                    <div class="msg_sent last">
+                    	<div class="bg">
+                            <div class="name pink">Anant Karkare</div>
+                                Hi Aditi, good afternoon
+                             </div>   
+                        <div class="timetag">02:17 PM</div>
+                    </div>	                    
+                    
+                    <div class="msg_sent">
+                    	<div class="bg">
+                            <div class="name purple">Amruta Karkare</div>
+                            Today at around 7:00 AM Priya had <br/>
+                            - <strong>1 Bowl</strong> Kande Pohe<br/>
+                            - <strong>1 Glass</strong> of Milk
+                        </div>
+                        <div class="timetag">02:17 PM</div>
+                    </div>                    
+
+                    <div class="msg_received">
+                    	<div class="bg">
+                        	<div class="name">Dr Hemant Kulkarni</div>
+								Hello Anant &amp; Amruta
+                        </div>
+                        <div class="timetag">02:20 PM</div>
+                    </div>	
+                    <div class="msg_received continued">
+                    	<div class="bg">
+                        	<div class="name">Dr Hemant Kulkarni</div>
+								How is Priya?
+                        </div>
+                        <div class="timetag">02:20 PM</div>
+                    </div>	
+                    <div class="clearfix"></div>
+            </div>
+            <div class="panel-footer">
+                  <input type="text" class="form-control" ng-model="newMsg" ng-keyup="typingMsg()" placeholder="Type a message or query here" >
+                  <div class="add_btn">
+                  		<span class="ion-plus-round" ng-if="footerBtn == 'plus'" ng-click="entryPopup.show = true"></span>
+                   		<span class="ion-android-send" ng-if="footerBtn == 'send'"></span>
+                  </div>
+            </div><!--panel-footer-->
+            <div class="addinfo_popup_holder" ng-show="entryPopup.show">
+                   <div class="add_info_pop">
+                   		<div class="water_intake" ng-click="gotopage('water-intake')">
+                        	<img src="img/water-intake.jpg"/><br/>Water Intake
+                        </div>
+                        <div class="meal_entry" ng-click="gotopage('meal-entry')">
+                        	<img src="img/meal-entry.jpg"/><br/>Meal Entry
+                        </div>
+                        <div class="activity_log">
+                        	<img src="img/activity-log.jpg"/><br/>Activity Log
+                        </div>
+                        <div class="vitals_track">
+                        	<img src="img/vitals-track.jpg"/><br/>Vitals Track
+                        </div>
+                   </div>
+                   <div class="close_infopopup" ng-click="entryPopup.show = false"><span class="ion-close-round"></span></div>
+            </div>
+            
+            </div><!--panel-->  
+        </div>
+        
+    </div><!--holder-->
+</div><!--wrapper-->
